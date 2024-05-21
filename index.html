@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aaliyah Bullen </title> <!-- as it appears on top bar -->
+    <title>Aaliyah NL Bullen </title> <!-- as it appears on top bar -->
     <style>
         body {
             font-family: Helvetica, sans-serif;
@@ -43,103 +43,52 @@
             background-color: #0056b3;
         }
     </style>
-
-    <title>Photo Slideshow</title>
-    <style>
-    .slideshow-container {
-        position: relative;
-        max-width: 800px;
-        max-height: 400px;
-        margin: auto;
-    }
-
-    .slideshow-container img {
-        width: 100%;
-        height: 50%;
-    }
-
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 24px;
-        padding: 10px;
-    }
-
-    .prev {
-        left: 0;
-    }
-
-    .next {
-        right: 0;
-    }
-
-    .caption {
-        text-align: center;
-        font-size: 24px;
-        margin-top: 10px;
-    }
-    </style>
-
-    
-
 </head>
+
 <body>
     <header>
-        <h1>Aaliyah Bullen</h1>
+        <h1>Aaliyah NL Bullen</h1>
         <p>Linguistics | Cognitive Science | Computer Science</p>
     </header>
-    <div class="container">
-        <h1>Documenting my journey as an interdisciplinary student and researcher. </h1>
-    </div>
 
-    <div class="container">
-        <p>Snapshots across semesters.</p>
-    </div>
 
-    <div class="slideshow-container">
-    <div class="slide">
-        <img src="slideshow/semantics.jpg" alt="Aaliyah Semantics">
-        <div class="caption">Fall 2022: Reviewing presuppositions with <a href="https://www.mauraoleary.org/">Professor O'Leary</a> before grading for her Semantics class.</div>
-    </div>
-    
-    <div class="slide">
-        <img src="slideshow/trace.jpg" alt="Aaliyah TRACE Model Overview">
-        <div class="caption">Fall 2021: Taking notes on TRACE, my favorite speech perception model.</div>
-    </div>
-    
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Snapshots</a></li>
+          <li><a href="#">CV</a></li>
+        </ul>
+      </nav>
 
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    </div>
+    <main>
+        
+<!-- put photo here -->
+        <div class="container">
+            <h1>Documenting my journey as an interdisciplinary researcher 
+                and developer. </h1>
+        </div>
 
-    <script>
-    let slideIndex = 1;
-    showSlide(slideIndex);
+        <p>What have I been up to? </p>
+        
+        graduating w a degree in ...
+        - what i got from cognitive science
+        - what i got from computer science 
+        building research skills ...
+        - lingustics research skills
+        - psych research skills 
+        industry skills 
+        -taught myself html, css for site
+        - See <a href="#">Projects</a> for projects in development 
 
-    function changeSlide(n) {
-    showSlide(slideIndex += n);
-    }
+    </main>
 
-    function showSlide(n) {
-    const slides = document.getElementsByClassName("slide");
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-    }
-    </script>
+  
+
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Aaliyah Bullen</p>
+            <p>&copy; 2024 Aaliyah NL Bullen</p>
         </div>
     </footer>
 </body>
